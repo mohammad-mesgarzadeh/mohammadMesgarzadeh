@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mohammadmesgarzadeh</title>
+    <link rel="stylesheet" href="styles/output.css">
+
+</head>
+
+<body class="p-0 m-0 box-border font-[Vazir-FD] overflow-x-hidden">
+    <!-- header -->
+
+    <header class="flex items-center flex-col lg:flex-row-reverse container mx-auto ">
+        <div class="w-full md:w-[60%] h-[20rem] lg:h-[40rem] flex flex-col">
+            <nav class="pt-6">
+                <ul class="flex justify-center items-center flex-row-reverse [&>_li]:p-3 [&>_li]:font-bold ">
+                    <button class="cursor-pointer" href="" data-theme="theme" onclick="toggleNightMode()" title="moon">
+                        <svg class="moon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            data-sentry-element="svg" data-sentry-component="Moon" data-sentry-source-file="Moon.tsx">
+                            <path
+                                d="M19.2827 7.10938C20.0675 8.81309 20.3114 10.7164 19.9814 12.563C19.6513 14.4095 18.7633 16.1105 17.4369 17.4369C16.1105 18.7633 14.4095 19.6513 12.563 19.9814C10.7164 20.3114 8.81309 20.0675 7.10938 19.2827C8.1228 23.8461 12.1938 27.2575 17.0621 27.2575C22.693 27.2575 27.2575 22.693 27.2575 17.0621C27.2575 12.1938 23.8461 8.1228 19.2827 7.10938Z"
+                                fill="#5E6C84" data-sentry-element="path" data-sentry-source-file="Moon.tsx"></path>
+                            <path
+                                d="M7.90268 5.11929C7.90268 4.99359 7.82367 4.74219 7.50762 4.74219C7.19157 4.74219 7.11256 4.99359 7.11256 5.11929C7.11256 5.7478 6.7175 7.00481 5.13725 7.00481C5.00556 7.00481 4.74219 7.08023 4.74219 7.38192C4.74219 7.6836 5.00556 7.75902 5.13725 7.75902C5.79569 7.82187 7.11256 8.28697 7.11256 9.64454C7.11256 9.77025 7.19157 10.0216 7.50762 10.0216C7.82367 10.0216 7.90268 9.77025 7.90268 9.64454C7.90268 8.13613 9.35124 7.75902 9.87799 7.75902C10.0097 7.75902 10.2731 7.6836 10.2731 7.38192C10.2731 7.08023 10.0097 7.00481 9.87799 7.00481C8.29774 7.00481 7.90268 5.7478 7.90268 5.11929Z"
+                                fill="#5E6C84" data-sentry-element="path" data-sentry-source-file="Moon.tsx"></path>
+                            <path
+                                d="M13.0385 9.64454C13.0385 9.51884 13.1175 9.26744 13.4335 9.26744C13.7496 9.26744 13.8286 9.51884 13.8286 9.64454C13.8286 10.0216 14.0656 10.7759 15.0138 10.7759C15.1455 10.7759 15.4089 10.8513 15.4089 11.153C15.4089 11.4546 15.1455 11.5301 15.0138 11.5301C14.6187 11.5301 13.8286 11.7563 13.8286 12.6614C13.8286 12.7871 13.7496 13.0385 13.4335 13.0385C13.1175 13.0385 13.0385 12.7871 13.0385 12.6614C13.0385 12.2843 12.8014 11.5301 11.8533 11.5301C11.7216 11.5301 11.4582 11.4546 11.4582 11.153C11.4582 10.8513 11.7216 10.7759 11.8533 10.7759C12.2484 10.7759 13.0385 10.5496 13.0385 9.64454Z"
+                                fill="#5E6C84" data-sentry-element="path" data-sentry-source-file="Moon.tsx"></path>
+                        </svg>
+                    </button>
+                    <li><a href="#home" data-i18n="Home" href="">خانه</a></li>
+                    <li><a href="#Discription" data-i18n="Discription" href="">توضیحات</a></li>
+                    <li><a data-i18n="Skills" href="#Skills">مهارت‌ها</a></li>
+                    <li><a href="#Portfolio" onclick="toggleTheme()" data-i18n="Portfolio" href="">نمونه‌کارها</a></li>
+                    <button
+                        class="h-8 w-14 flex justify-center items-center bg-blue-500 text-white duration-250 font-bold rounded cursor-pointer"
+                        id='btn1' data-i18n="btn" onclick="toggleLanguage()" class="">
+                        ENG
+                    </button>
+                </ul>
+            </nav>
+            <div class=" flex-grow flex flex-col justify-center items-center text-right my-30 lg:my-0 ">
+                <div data-i18n="name" class="text-[30px] lg:text-[30px]  mb-4 font-bold">محمد مسگرزاده هستم</div>
+                <div data-i18n="info" class="font-bold w-96   mb-5 text-center text-[#696969]">توسعه‌دهنده فرانت‌اند و
+                    متخصص
+                    پیاده‌سازی رابط‌های کاربری مدرن و تعاملی</div>
+                <button id="btn2"
+                    class="bg-blue-500 w-[20rem] flex justify-center text-white font-bold py-2 px-4 rounded cursor-pointer">
+                    <a data-i18n="Request" href="https://www.linkedin.com/in/mohammad-mesgarzadeh-a5422837a/">درخواست
+                        همکاری</a>
+                </button>
+            </div>
+        </div>
+        <div id="header"
+            class="w-screen lg:w-[40%] flex h-[20rem] lg:h-[40rem] z-1 justify-center lg:justify-end items-center bg-[#6aa4b8] my-40 lg:my-0">
+            <figure class="h-full w-48 lg:w-96 relative justify-end z-39 items-center">
+                <img class="w-full absolute bottom-0 left-0 lg:left-40 z-40 object-contain" src="images/IMG_9641.png"
+                    alt="">
+            </figure>
+        </div>
+    </header>
+
+    <!-- section 1 -->
+
+    <section class="container mx-auto py-12 max-w-6xl px-4">
+
+        <h2 data-i18n="Discription" id="Discription"
+            class="container my-3 mx-auto px-25 m-5 flex justify-center text-center font-bold text-3xl border-[#6aa4b8] w-1/2 h-15 border-b-3  ">
+            <span>توضیحات</span>
+        </h2>
+
+        <div id="section1"
+            class="bg-white/70 backdrop-blur-md shadow-xl rounded-2xl border border-gray-200 p-6 md:p-10">
+
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+
+                <figure
+                    class="w-44 h-44 md:w-60 md:h-60 rounded-full overflow-hidden shadow-lg border-4 border-[#6aa4b8]/30">
+                    <img class="w-full h-full object-cover" src="images/project-04.webp" alt="">
+                </figure>
+
+                <div class="flex-1 text-right">
+
+                    <h3 data-i18n="name" class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
+                        محمد مسگرزاده هستم
+                    </h3>
+
+                    <p data-i18n="Introduction"
+                        class="leading-7 text-[#696969] font-semibold text-[14px] md:text-[16px] mb-6 [direction:rtl] ">
+                        به‌عنوان یک فرانت‌اند دولوپر، متخصص در پیاده‌سازی دقیق و بهینه‌ی رابط‌های کاربری هستم و با تکیه
+                        بر
+                        HTML، CSS و JavaScript تجربه‌های تعاملی، سریع و استاندارد ارائه می‌دهم. معماری ظریف UI، مدیریت
+                        جزئیات پیکسلی، طراحی واکنش‌گرا و رعایت اصول دسترس‌پذیری از اولویت‌های کاری من است. همواره تلاش
+                        می‌کنم کدی ساختارمند، مقیاس‌پذیر و قابل نگه‌داری تولید کنم و با رویکردی مبتنی بر بهترین روش‌های
+                        توسعه، طراحی‌ها را به محصولی واقعی، روان و کاربرمحور تبدیل کنم.
+                    </p>
+
+                    <div class="flex justify-end">
+                        <a data-i18n="resume" href="#"
+                            class="inline-flex items-center gap-2 bg-[#484848] hover:bg-[#2f2f2f] transition text-white font-bold py-2.5 px-5 rounded-lg shadow-md">
+                            دریافت فایل رزومه
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section 2 -->
+    <section class="container mx-auto w-1/2 lg:w-1/2 px-4 pb-5">
+        <h2 data-i18n="Skills" id="Skills"
+            class="container my-3 mx-auto px-25 m-5 flex justify-center text-center font-bold text-3xl border-[#6aa4b8] w-1/2 h-15 border-b-3  ">
+            مهارت‌ها</h2>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 " id="">
+
+            <figure id="skills-1" class="flex h-48 justify-center items-center flex-col w-full bg-white rounded-lg shadow-md hover:shadow-[#f0652a] transition
+            ">
+                <figcaption class="h-[20%] flex justify-center uppercase font-bold pt-4">html</figcaption>
+                <img class=" w-1/2 h-[60%] object-contain" src="images/skills/HTML.png" alt="">
+                <div class="flex h-[20%] items-center gap-1 w-full pb-4 px-2">
+                    <div class="w-4 h-4 bg-rose-600 rounded-full"></div>
+                    <div class="flex-grow h-3 bg-gray-200 rounded-full">
+                        <div class="h-full bg-rose-600 rounded-full flex items-center justify-end px-2"
+                            style="width: 100%">
+                            <span class="text-[10px] font-bold text-white">100%</span>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <figure id="skills-2" class="flex h-48 justify-center items-center flex-col w-full bg-white rounded-lg shadow-md hover:shadow-[#284de2] transition
+            ">
+                <figcaption class="h-[20%] flex justify-center uppercase font-bold pt-4">CSS</figcaption>
+                <img class=" w-1/2 h-[60%] object-contain" src="images/skills/CSS.png" alt="">
+                <div class="flex h-[20%] items-center gap-1 w-full pb-4 px-2">
+                    <div class="w-4 h-4 bg-rose-600 rounded-full"></div>
+                    <div class="flex-grow h-3 bg-gray-200 rounded-full">
+                        <div class="h-full bg-rose-600 rounded-full flex items-center justify-end px-2"
+                            style="width: 100%">
+                            <span class="text-[10px] font-bold text-white">100%</span>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <figure id="skills-3" class="flex h-48 justify-center items-center flex-col w-full bg-white rounded-lg shadow-md hover:shadow-[#d5ba33] transition
+            ">
+                <figcaption class="h-[20%] flex justify-center uppercase font-bold pt-4">JS</figcaption>
+                <img class=" w-1/2 h-[60%] object-contain" src="images/skills/JS.png" alt="">
+                <div class="flex h-[20%] items-center gap-1 w-full pb-4 px-2">
+                    <div class="w-4 h-4 bg-rose-600 rounded-full"></div>
+                    <div class="flex-grow h-3 bg-gray-200 rounded-full">
+                        <div class="h-full bg-rose-600 rounded-full flex items-center justify-end px-2"
+                            style="width: 60%">
+                            <span class="text-[10px] font-bold text-white">60%</span>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <figure id="skills-4" class="flex h-48 justify-center items-center flex-col w-full bg-white rounded-lg shadow-md hover:shadow-[#38bdf8] transition
+            ">
+                <figcaption class="h-[20%] flex justify-center uppercase font-bold pt-4">TW</figcaption>
+                <img class=" w-1/2 h-[60%] object-contain" src="images/skills/TW.png" alt="">
+                <div class="flex h-[20%] items-center gap-1 w-full pb-4 px-2">
+                    <div class="w-4 h-4 bg-rose-600 rounded-full"></div>
+                    <div class="flex-grow h-3 bg-gray-200 rounded-full">
+                        <div class="h-full bg-rose-600 rounded-full flex items-center justify-end px-2"
+                            style="width: 100%">
+                            <span class="text-[10px] font-bold text-white">100%</span>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <figure id="skills-5" class="flex h-48 justify-center items-center flex-col w-full bg-white rounded-lg shadow-md hover:shadow-[#8513fa] transition
+            ">
+                <figcaption class="h-[20%] flex justify-center uppercase font-bold pt-4">Bootstrap</figcaption>
+                <img class=" w-1/2 h-[60%] object-contain" src="images/skills/Bootstrap.png" alt="">
+                <div class="flex h-[20%] items-center gap-1 w-full pb-4 px-2">
+                    <div class="w-4 h-4 bg-rose-600 rounded-full"></div>
+                    <div class="flex-grow h-3 bg-gray-200 rounded-full">
+                        <div class="h-full bg-rose-600 rounded-full flex items-center justify-end px-2"
+                            style="width: 60%">
+                            <span class="text-[10px] font-bold text-white">60%</span>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <figure id="skills-6" class="flex h-48 justify-center items-center flex-col w-full bg-white rounded-lg shadow-md hover:shadow-[#02bcf0] transition
+            ">
+                <figcaption class="h-[20%] flex justify-center uppercase font-bold pt-4">Responsive</figcaption>
+                <img class=" w-1/2 h-[60%] object-contain" src="images/skills/Responsive.png" alt="">
+                <div class="flex h-[20%] items-center gap-1 w-full pb-4 px-2">
+                    <div class="w-4 h-4 bg-rose-600 rounded-full"></div>
+                    <div class="flex-grow h-3 bg-gray-200 rounded-full">
+                        <div class="h-full bg-rose-600 rounded-full flex items-center justify-end px-2"
+                            style="width: 80%">
+                            <span class="text-[10px] font-bold text-white">80%</span>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+
+        </div>
+    </section>
+
+    <!-- section 3 -->
+
+
+    <section class="container mx-auto px-4 py-5">
+
+        <h2 data-i18n="Portfolio" id="Portfolio"
+            class="container my-3 mx-auto px-25 m-5 flex justify-center text-center font-bold text-3xl border-[#6aa4b8] w-1/2 h-15 border-b-3  ">
+            نمونه‌کارها</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+
+            <div id="portfolio1" class="bg-white p-4 rounded-lg shadow-md hover:shadow-red-400 transition">
+                <div class="flex flex-col items-center">
+                    <a class="bg-gray-200 h-48 w-full rounded relative overflow-hidden group cursor-pointer"
+                        href="https://mohammad-mesgarzadeh.github.io/First-project-country-butcher-avada-/">
+                        <img class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                            src="images/country-butcher-avada.png" alt="">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-500">
+                        </div>
+                    </a>
+                    <figcaption class=" my-4 font-bold text-center"><a
+                            href="https://mohammad-mesgarzadeh.github.io/First-project-country-butcher-avada-/">country
+                            butcher</a>
+
+                    </figcaption>
+                    <div class="flex gap-5">
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-rose-600 transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/HTML.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#284de2] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/CSS.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="portfolio2" class="bg-white p-4 rounded-lg shadow-md hover:shadow-red-400 transition">
+                <div class="flex flex-col items-center">
+                    <a class="bg-gray-200 h-48 w-full rounded relative overflow-hidden group cursor-pointer"
+                        href="https://mohammad-mesgarzadeh.github.io/calculator/">
+                        <img class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                            src="images/calculator.jpeg" alt="">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-500">
+                        </div>
+                    </a>
+                    <figcaption class="my-4 font-bold text-center"><a
+                            href="https://mohammad-mesgarzadeh.github.io/calculator/">calculator</a></figcaption>
+                    <div class="flex gap-5">
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-rose-600 transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/HTML.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#38bdf8] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/TW.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#d5ba33] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/JS.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="portfolio3" class="bg-white p-4 rounded-lg shadow-md hover:shadow-red-400 transition">
+                <div class="flex flex-col items-center">
+                    <a class="bg-gray-200 h-48 w-full rounded relative overflow-hidden group cursor-pointer"
+                        href="https://mohammad-mesgarzadeh.github.io/To-Do-List/">
+                        <img class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                            src="images/To-do list.jpeg" alt="">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-500">
+                        </div>
+                    </a>
+                    <figcaption class="my-4 font-bold text-center"><a
+                            href="https://mohammad-mesgarzadeh.github.io/To-Do-List/">To-do list</a></figcaption>
+                    <div class="flex gap-5">
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-rose-600 transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/HTML.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#38bdf8] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/TW.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#d5ba33] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/JS.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio4" class="bg-white p-4 rounded-lg shadow-md hover:shadow-red-400 transition">
+                <div class="flex flex-col items-center">
+                    <a class="bg-gray-200 h-48 w-full rounded relative overflow-hidden group cursor-pointer"
+                        href="https://mohammad-mesgarzadeh.github.io/Weather/">
+                        <img class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                            src="images/Weather.png" alt="">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-500">
+                        </div>
+                    </a>
+                    <figcaption class="my-4 font-bold text-center"><a
+                            href="https://mohammad-mesgarzadeh.github.io/Weather/">Weather</a></figcaption>
+                    <div class="flex gap-5">
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-rose-600 transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/HTML.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#38bdf8] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/TW.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#d5ba33] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/JS.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio5" class="bg-white p-4 rounded-lg shadow-md hover:shadow-red-400 transition">
+                <div class="flex flex-col items-center">
+                    <a class="bg-gray-200 h-48 w-full rounded relative overflow-hidden group cursor-pointer"
+                        href="https://mohammad-mesgarzadeh.github.io/Morse-code-translator/">
+                        <img class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                            src="images/MorseCodeTranslator.png" alt="">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-500">
+                        </div>
+                    </a>
+                    <figcaption class="my-4 font-bold text-center"><a
+                            href="https://mohammad-mesgarzadeh.github.io/Morse-code-translator/">Morse code
+                            translator</a></figcaption>
+                    <div class="flex gap-5">
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-rose-600 transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/HTML.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#38bdf8] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/TW.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#d5ba33] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/JS.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio6" class="bg-white p-4 rounded-lg shadow-md hover:shadow-red-400 transition">
+                <div class="flex flex-col items-center">
+                    <a class="bg-gray-200 h-48 w-full rounded relative overflow-hidden group cursor-pointer"
+                        href="https://mohammad-mesgarzadeh.github.io/admin-panel/">
+                        <img class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                            src="images/adminpanel.png" alt="">
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-500">
+                        </div>
+                    </a>
+                    <figcaption class="my-4 font-bold text-center"><a
+                            href="https://mohammad-mesgarzadeh.github.io/admin-panel/">admin panel</a></figcaption>
+                    <div class="flex gap-5">
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-rose-600 transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/HTML.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#38bdf8] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/TW.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#d5ba33] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/JS.png" alt="">
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full shadow-md hover:shadow-[#02bcf0] transition transform group-hover:-translate-y-2 cursor-pointer">
+                            <img class="w-full h-full" src="images/skills/Responsive.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer id="footer" class="flex h-20 mt-5 w-full items-center justify-center bg-[#454545]">
+        <a class="w-10 h-10 rounded-full shadow-md hover:shadow-blue-500 transition transform hover:translate-y-[-10px] cursor-pointer"
+            href="https://github.com/mohammad-mesgarzadeh"><img src="images/icons/GitHub.png" alt=""></a>
+        <a class="w-10 h-10 rounded shadow-md hover:shadow-blue-500 transition transform hover:translate-y-[-10px] cursor-pointer "
+            href="https://www.linkedin.com/in/mohammad-mesgarzadeh-a5422837a/"><img
+                src="images/icons/Linkedin(black&white).png" alt=""></a>
+
+        <div class="group relative inline-block">
+            <div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2
+                bg-gray-800 text-white text-sm font-semibold py-2 px-3 rounded-lg shadow-lg
+                opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100
+                transition-all duration-300 pointer-events-none whitespace-nowrap">
+                m_mesgarzade@yahoo.com
+            </div>
+            <div
+                class="w-10 h-10 rounded shadow-md hover:shadow-blue-500 transition transform group-hover:-translate-y-2 cursor-pointer">
+                <img src="images/icons/email.png" class="w-full h-full object-contain" alt="">
+            </div>
+
+        </div>
+        <div class="group relative inline-block">
+            <div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2
+                bg-gray-800 text-white text-sm font-semibold py-2 px-3 rounded-lg shadow-lg
+                opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100
+                transition-all duration-300 pointer-events-none whitespace-nowrap">
+                09336153916
+            </div>
+            <div
+                class="w-10 h-10 rounded shadow-md hover:shadow-blue-500 transition transform group-hover:-translate-y-2 cursor-pointer">
+                <img src="images/icons/Phone.png" class="w-full h-full object-contain" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
